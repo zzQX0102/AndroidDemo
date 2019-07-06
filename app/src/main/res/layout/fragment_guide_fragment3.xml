@@ -5,5 +5,4 @@
     android:background="@mipmap/guide_3"
     tools:context="com.isoft.demo.androiddemo.GuideFragment3">
 
-
 </FrameLayout>

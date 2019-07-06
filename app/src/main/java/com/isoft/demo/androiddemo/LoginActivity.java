@@ -27,9 +27,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.lang.reflect.Method;
 
-/**
- * A login screen that offers login via email/password.
- */
+
 public class LoginActivity extends AppCompatActivity {
     EditText uname;
     EditText upwd;

@@ -5,7 +5,7 @@
     android:background="@mipmap/guide_4"
     tools:context="com.isoft.demo.androiddemo.GuideFragment4">
 
-
+z
     <!--<ImageButton
         android:id="@+id/btn_img"
         android:layout_width="wrap_content"

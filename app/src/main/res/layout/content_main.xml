@@ -19,47 +19,62 @@
 
     <RadioGroup
         android:id="@+id/bottomHav"
-        android:layout_weight="10"
-        android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:layout_weight="10"
         android:background="#ffffff"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
+
         <RadioButton
-            android:button="@null"
-            android:drawableTop="@drawable/radiobutton1"
-            android:gravity="center"
+            android:id="@+id/home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton1"
+            android:gravity="center"
             android:text="首页" />
 
         <RadioButton
-            android:button="@null"
-            android:gravity="center"
-            android:drawableTop="@drawable/radiobutton1"
+            android:id="@+id/flight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton1"
+            android:gravity="center"
             android:text="航班" />
 
+        <!--<View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:foreground="#cccccc" />-->
+
         <RadioButton
-            android:button="@null"
-            android:gravity="center"
-            android:drawableTop="@drawable/radiobutton1"
+            android:id="@+id/city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton1"
+            android:gravity="center"
             android:text="城市" />
 
         <RadioButton
-            android:button="@null"
-            android:gravity="center"
-            android:drawableTop="@drawable/radiobutton1"
+            android:id="@+id/my"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="我的"/>
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton1"
+            android:gravity="center"
+            android:text="我的" />
     </RadioGroup>
-</LinearLayout>
+</LinearLayout><!--
+android:id="@+id/my"
+android:id="@+id/city"
+android:id="@+id/flight"
+android:id="@+id/home"
+-->

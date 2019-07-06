@@ -42,10 +42,8 @@ public class FlashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flash);
         skip = (TextView) findViewById(R.id.skip);
-       // SharedPreferences preferences = getSharedPreferences("isFirstUse", MODE_PRIVATE)
         final SharedPreferences preferences = getSharedPreferences("fd", MODE_PRIVATE);
         isFirstuse = preferences.getBoolean("isFirstUse", true);
-        //String fisrt=
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +55,6 @@ public class FlashActivity extends AppCompatActivity {
                 SharedPreferences flags = getSharedPreferences("fd", MODE_PRIVATE);
                 SharedPreferences.Editor editor = flags.edit();
                 Intent intent = new Intent();
-                //记录第一次功能自己实现
                 if (isFirstuse) {
                     intent.setClass(FlashActivity.this, GuideActivity.class);//shared
                     editor.putBoolean("isFirstUse", false);
@@ -74,14 +71,9 @@ public class FlashActivity extends AppCompatActivity {
             runnable = new Runnable() {
                 @Override
                 public void run() {
-                /*Intent intent = new Intent();
-                intent.setClass(FlashActivity.this, GuideActivity.class);
-                startActivity(intent);
-                finish();*/
                     SharedPreferences flags = getSharedPreferences("fd", MODE_PRIVATE);
                     SharedPreferences.Editor editor = flags.edit();
                     Intent intent = new Intent();
-                    //记录第一次功能自己实现
                     if (isFirstuse) {
                         intent.setClass(FlashActivity.this, GuideActivity.class);//shared
                         editor.putBoolean("isFirstUse", false);
