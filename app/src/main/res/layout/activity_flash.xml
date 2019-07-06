@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.isoft.demo.androiddemo.FlashActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:src="@mipmap/bg" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:lineSpacingExtra="3dp"
+        android:textSize="20dp"
+        android:background="#404040"
+        android:text="跳过5"
+        />
+</FrameLayout>

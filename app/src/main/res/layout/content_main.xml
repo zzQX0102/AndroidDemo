@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d7d4"
+    android:orientation="vertical"
+    tools:context="com.isoft.demo.androiddemo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#92f7f7">
+    </android.support.v4.view.ViewPager>
+
+
+    <RadioGroup
+        android:id="@+id/bottomHav"
+        android:layout_weight="10"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <RadioButton
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="首页" />
+
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="航班" />
+
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="城市" />
+
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我的"/>
+    </RadioGroup>
+</LinearLayout>

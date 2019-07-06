@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/guide_4"
+    tools:context="com.isoft.demo.androiddemo.GuideFragment4">
+
+
+    <!--<ImageButton
+        android:id="@+id/btn_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="130dp"
+        android:src="@drawable/guide_btn" />-->
+    <!--android:background="@android:color/transparent"
+    android:theme="@android:style/Theme.Translucent"
+    android:background="@drawable/button_shape"
+    android:hint="现在出发"设置为透明-->
+    <Button
+        android:id="@+id/btn_img"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="493dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#FFFFFF"
+        android:lineSpacingExtra="7dp"
+        android:textSize="30dp"
+        android:textStyle="normal"
+        android:hint="现在出发"
+        />
+</FrameLayout>
